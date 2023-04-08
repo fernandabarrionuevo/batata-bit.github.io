@@ -1,0 +1,490 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #FFFFFF;
+    --white2: #FAF8F7;
+    --white3: #E5E5E5;
+    --black: #201E1C;
+    --gray: #757575;
+    --darker-gray: #808080;
+    --light-gray: #B5B0AC;
+    --orange: #FF9536;
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D4;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--white3);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+header{
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+}
+
+.header__logo{
+    margin-top: 4.6rem;
+}
+
+.header__info-container{
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+.header__info-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--white);
+    margin: 3.6rem 0 2.4rem;
+    line-height: 2.6rem;
+}
+
+.header__info-container p{
+    color: var(--soft-orange);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+    line-height: 1.8rem;
+}
+
+.header__info-container a{
+    background-color: var(--white2);
+    border-radius: .4rem;
+    font-weight: 700;
+    padding: 12px 16px;
+    position: relative;
+    top: .7rem;
+    text-decoration: none;
+    color: var(--black);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.header__info-container a i{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    
+}
+
+/*----------------MAIN-----------------*/
+/*Tasa de Cambio*/
+.product-container{
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+}
+
+.product__info{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.product__info h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-top: 4rem;
+}
+
+.product__info p{
+    color: var(--gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 2.4rem;
+}
+/*.product-carrousel{
+    display: flex;
+}*/
+
+.product__table-container{
+    margin: 2.4rem auto;
+    width: 20rem;
+}
+.currency-table__tittle{
+    color: var(--orange);
+    font-size: 1.8rem;
+    text-align: start;
+    padding-left: .74rem;
+}
+
+.currency-table__tittle--comition{
+    color: #1A9AF7;
+}
+.currency-table-grid{
+    color: var(--light-gray);
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(2, 10rem);
+    grid-auto-rows: 3.9rem;
+    justify-content: center;
+    margin: 1.2rem 0 1.6rem;
+}
+.currency-table__item{
+    background-color: var(--white);
+    color: var(--light-gray);
+    padding: 1rem;
+}
+
+.currency-table__item--top-left{
+    border-top-left-radius: .8rem;
+}
+.currency-table__item--top-right{
+    border-top-right-radius: .8rem;
+}
+.currency-table__item--bottom-left{
+    border-bottom-left-radius: .8rem;
+}
+.currency-table__item--bottom-right{
+    border-bottom-right-radius: .8rem;
+}
+
+.currency-table__item p{
+    height: 100%;
+}
+
+.currency-table__item--trending-down{
+    background-image: url(assets/iconos/trending-down.svg);
+}
+
+.currency-table__item--trending-up{
+    background-image: url(assets/iconos/trending-up.svg);
+}
+
+.currency-table__item span{
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 1rem;
+}
+.currency-table__data{
+    background-color: var(--soft-orange);
+    border-radius: .8rem;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    padding: .8rem;
+}
+
+.currency-table__data--comition{
+    background-color: #E7F5FF;
+}
+
+.currency-table__potato{
+    position: relative;
+    top: 1.9rem;
+}
+
+/*Ventajas*/
+.benefit-container{
+    background-color: var(--black);
+    text-align: center;
+    padding: 6.4rem 0 4.7rem;
+}
+
+.benefit__title{
+    width: 28.8rem;
+    margin: 0 auto;
+}
+
+.benefit__title h3{
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.benefit__title p{
+    color: var(--darker-gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 2.4rem;
+}
+
+/*Cards*/
+.benefit__cards-container{
+    width: 28.8rem;
+    margin: 0 auto;
+}
+
+.product-carrousel__arrow-left{
+    background: url(assets/iconos/arrow-left.svg);
+}
+
+.product-carrousel__arrow-right{
+    background: url(assets/iconos/arrow-right.svg);
+    
+}
+.product-carrousel__arrow{
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+
+.benefit__cards__card{
+    background-color: #282623;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: .4rem;
+    height: 15.2rem;
+    padding: 1.6rem;
+    width: 28.8rem;
+    text-align: start;
+    margin-top: 1.6rem;
+}
+
+.card__icon-clock{
+    background: url(assets/iconos/clock.svg);
+}
+.card__icon-eye{
+    background: url(assets/iconos/eye.svg);
+}
+.card__icon-dollar-sign{
+    background: url(assets/iconos/dollar-sign.svg);
+}
+.card__icon-check-circle{
+    background: url(assets/iconos/check-circle.svg);
+}
+
+.benefit__cards__card span{
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.benefit__cards__card h4{
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 1.2rem
+}
+
+.benefit__cards__card p{
+    color: var(--darker-gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+/*Bitcoin Img*/
+
+.bitcoin-container{
+    text-align: center;
+}
+
+.bitcoin__img{
+    background: url(assets/imagenes/bitcoinbaby.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 387px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.bitcoin__img h2{
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    padding-top: 6.4rem;
+}
+
+/*Precio*/
+.price-container{
+    background-color: var(--white);
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 6.4rem;
+}
+.price__title{
+    width: 28.8rem;
+    margin: 0 auto;
+    padding: 6.4rem 0;
+}
+
+.price__title h2{
+    color: var(--black);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.price__title p{
+    color: var(--gray);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 2.4rem;
+}
+
+/*Cards*/
+
+.price__cards-container{
+    position: relative;
+}
+.price__cards__arrows-left{
+    background: url(assets/iconos/arrow-left-gray.svg);
+    left: 2rem;
+}
+
+.price__cards__arrows-right{
+    background: url(assets/iconos/arrow-right-gray.svg);
+    right: 2rem;
+}
+
+.price__cards__arrows{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 50%;
+}
+.price__cards__card{
+    background-color: var(--white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: .8rem;
+    width: 19rem;
+    margin: 0 auto;
+}
+
+.price__card__title{
+    background-color: var(--bitcoin-orange);
+    border-radius: .8rem;
+    bottom: 1.55rem;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    padding: .8rem;
+    position: relative;
+    width: fit-content;
+}
+
+.price__card__info{
+    padding: 1.6rem 1.6rem 2.4rem;
+}
+
+.price__card__info h3{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 1.6rem;
+}
+
+.price__card__info__price{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.2rem;
+    margin-top: .8rem;
+}
+
+.price__card__info__price span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-align: start;
+}
+
+.price__card__info__text{
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    margin-top: 1.6rem;
+}
+
+.price__card__info button{
+    align-items: center;
+    background: var(--white2);
+    color: var(--black);
+    border: .2rem solid var(--bitcoin-orange);
+    border-radius: .4rem;
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    padding: 1.5rem 1.2rem 1.5rem 1.6rem;
+    margin: 1.6rem auto 0;
+}
+
+.price__card__info button span{
+    background: url(assets/iconos/arrow-orange-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 2.4rem;
+    width: 2.4rem;
+    padding: .5rem;
+    margin-left: .8rem;
+}
+
+/*-------------FOOTER-------------*/
+footer{
+    background-color: var(--bitcoin-orange);
+    display: flex;
+    padding: 4rem 6.5rem;
+    justify-content: space-between;
+}
+
+.footer__social-media{
+    text-align: start;
+}
+
+.footer__social-media li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: .8rem;
+}
+
+.footer__social-media li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer__copyright{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__copyright picture{
+    background-image: url(assets/imagenes/potato.svg);
+    background-size: cover;
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 2.4rem;
+    width: 4.057rem;
+}
+
+.footer__copyright span{
+    color: var(--soft-orange);
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: .8rem;
+}
