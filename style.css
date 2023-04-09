@@ -80,6 +80,9 @@ header{
 }
 
 /*----------------MAIN-----------------*/
+main{
+    width: 100%;
+}
 /*Tasa de Cambio*/
 .product-container{
     text-align: center;
@@ -336,8 +339,18 @@ header{
 /*Cards*/
 
 .price__cards-container{
+    align-items: center;
+    display: flex;
+    height: 31.6rem;
     position: relative;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
 }
+
+.price__cards-container::-webkit-scrollbar{
+    width: 0;
+}
+
 .price__cards__arrows-left{
     background: url(assets/iconos/arrow-left-gray.svg);
     left: 2rem;
@@ -362,24 +375,33 @@ header{
     background-color: var(--white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: .8rem;
+    height: 25rem;
     width: 19rem;
-    margin: 0 auto;
+    min-width: 19rem;
+    margin: 0 1rem;
+    scroll-snap-align: center;
 }
 
 .price__card__title{
     background-color: var(--bitcoin-orange);
     border-radius: .8rem;
-    bottom: 1.55rem;
+    
     color: var(--white);
     font-family: 'Inter', sans-serif;
     margin: 0 auto;
     padding: .8rem;
-    position: relative;
     width: fit-content;
+    position: relative;
+    bottom: 1.55rem;
 }
 
 .price__card__info{
     padding: 1.6rem 1.6rem 2.4rem;
+}
+
+.price__card__info--anual{
+    position: relative;
+    bottom: 3.55rem;
 }
 
 .price__card__info h3{
